@@ -9,36 +9,36 @@ export default function Home() {
       title: "CoMed",
       description: "an Open-source, AI-powered, and completely Autonomous Brain MRI analysis & diagnosis platform for doctors to help their patients.",
       ps: "",
-      youtube: "",
+      youtube: "https://youtu.be/-umYRToyuQ4",
       tutorial: "",
-      github: "",
-      demo: ""
+      github: "https://github.com/abdibrokhim/comed-web",
+      demo: "https://comedai.vercel.app/"
     },
     {
       title: "PrepAlly",
       description: "an Open-source, AI-powered coding prep platform, offering real-time feedback, voice-guided insights, and secure, interactive practice.",
       ps: "",
-      youtube: "",
-      tutorial: "",
-      github: "",
-      demo: ""
-    },
-    {
-      title: "PaperAI",
-      description: "an Open-source, AI-powered research companion that streamlines literature reviews, enhances real-time collaboration, and offers a smart voice assistant to revolutionize your research experience.",
-      ps: "",
-      youtube: "",
-      tutorial: "",
-      github: "",
+      youtube: "https://youtu.be/wyp8tRTLLfQ",
+      tutorial: "https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md",
+      github: "https://github.com/abdibrokhim/ai-coding-interviewer",
       demo: ""
     },
     {
       title: "HumanAIze",
       description: "Transform your AI-generated content into natural, human-like text with the ultimate HumanAIze AI text tool.",
       ps: "",
-      youtube: "",
+      youtube: "https://youtu.be/CLrENdjIe58",
+      tutorial: "https://dev.to/abdibrokhim/step-by-step-tutorial-on-building-an-ai-text-humanizer-with-aiml-api-and-integration-with-clerk-auth-and-deploying-to-vercel-moj",
+      github: "https://github.com/abdibrokhim/humanaize",
+      demo: "https://humanaize.vercel.app/"
+    },
+    {
+      title: "PaperAI",
+      description: "an Open-source, AI-powered research companion that streamlines literature reviews, enhances real-time collaboration, and offers a smart voice assistant to revolutionize your research experience.",
+      ps: "",
+      youtube: "https://youtu.be/E7d1rLyXXVE",
       tutorial: "",
-      github: "",
+      github: "https://github.com/abdibrokhim/paper-ai-voice-assistant",
       demo: ""
     },
     {
@@ -46,35 +46,116 @@ export default function Home() {
       description: "Generate AI stickers with a single prompt at a time. The coolest AI Sticker Maker in the market.",
       ps: "",
       youtube: "",
-      tutorial: "",
-      github: "",
-      demo: ""
+      tutorial: "https://dev.to/abdibrokhim/building-an-ai-sticker-maker-platform-with-aiml-api-nextjs-react-and-tailwind-css-using-openai-gpt-4o-and-dalle-3-models-46ip",
+      github: "https://github.com/abdibrokhim/ai-sticker-maker",
+      demo: "https://ai-sticker-maker.vercel.app"
     },
     {
       title: "NextGen o1",
       description: "Overcomes the OpenAI o1 model's limitations by enabling browsing, file uploads, and system messages. Break free from restrictions and experience real-time data access, advanced workflows, and task automation with NextGen o1.",
       ps: "",
-      youtube: "",
+      youtube: "https://youtu.be/_wTaMLL4by0",
       tutorial: "",
-      github: "",
+      github: "https://github.com/abdibrokhim/nextgen-o1",
       demo: ""
     },
     {
       title: "MonkeytypeAI",
       description: "A minimalistic and customizable AI-powered typing test. Adjust user-configurable features such as themes, typing contents and more by simply generating using AI.",
       ps: "",
-      youtube: "",
+      youtube: "https://youtu.be/SGibxV1YHDo",
       tutorial: "",
-      github: "",
-      demo: ""
+      github: "https://github.com/abdibrokhim/monkeytype-ai/",
+      demo: "https://monkeytypeai.vercel.app/"
     },
     {
-      title: "MonkeytypeAI",
-      description: "A minimalistic and customizable AI-powered typing test. Adjust user-configurable features such as themes, typing contents and more by simply generating using AI.",
+      title: "LangflowAI",
+      description: "We automate Langflow with AI. No more drag and drop. Simply dictate and AI gets the work done!",
+      ps: "",
+      youtube: "https://youtu.be/d9eJJHAp8v8",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/langflow",
+      demo: "https://langflow-4fi8.onrender.com/"
+    },
+    {
+      title: "lovido",
+      description: "Free and open-source platform for downloading Loom videos. It's designed to help free Loom account users who are unable to download their recordings directly through the Loom platform.",
       ps: "",
       youtube: "",
       tutorial: "",
+      github: "https://github.com/abdibrokhim/loom-dl-web",
+      demo: "https://lovido.lol"
+    },
+    {
+      title: "StoryAI",
+      description: "StoryAI presents climate change data in a story format that can be generated according to the user's interests and level of academic knowledge in the field. Never get lost in the data again - StoryAI not only sorts through the data to make it more understandable and interactive for you, but also provides the context for various climate change phenomena. There is no doubt that climate change is happening, and we think that people of all ages and educational backgrounds should be aware of it and get ready to act: to stand with Earth and the sustainable future of humanity. StoryAI presents climate change data in a story format that can be generated according to the user's interests and level of academic knowledge in the field.",
+      ps: "",
+      youtube: "https://youtu.be/-IPLUUTiZak",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/story-ai-chrome-extension",
+      demo: "https://chatgpt.com/g/g-PRa3ZXK36-story-ai"
+    },
+    {
+      title: "AI Magic Flashcards",
+      description: "Generate flashcards simple invoke your imagination. Guess others flashcards and earn points. Exchange points to extra flashcard generations or cash them out (soon).",
+      ps: "",
+      youtube: "https://youtu.be/1NcGAoXCouM",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/AI-Magic-FlashCards-with-Stripe",
+      demo: "https://ai-magic-flashcards.vercel.app/"
+    },
+    {
+      title: "Chat With PDF",
+      description: "",
+      ps: "",
+      youtube: "https://youtu.be/AAy8ejtgBh4",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/Chat-With-PDF-NextJS-Langchain-Pinecone-OpenAI",
+      demo: "https://crunchgpt.vercel.app/"
+    },
+    {
+      title: "Harmony Quest",
+      description: "Harmony Quest is an engaging multiplayer game that combines creativity, guessing, and social interaction. Players can generate images and audio, then challenge their friends to guess what they are.",
+      ps: "",
+      youtube: "https://youtu.be/6opWWYy7yos",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/aiio",
+      demo: ""
+    },
+    {
+      title: "Harmony Quest",
+      description: "Harmony Quest is an engaging multiplayer game that combines creativity, guessing, and social interaction. Players can generate images and audio, then challenge their friends to guess what they are.",
+      ps: "",
+      youtube: "https://youtu.be/6opWWYy7yos",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/aiio",
+      demo: ""
+    },
+    {
+      title: "EcoShopAI",
+      description: "Hey, there! I help you make eco-friendly purchasing decisions with minimal environmental impact.",
+      ps: "",
+      youtube: "https://youtu.be/8GTJseYt7TA",
+      tutorial: "",
       github: "",
+      demo: "https://chatgpt.com/g/g-rTTibE8p9-ecoshop-ai"
+    },
+    {
+      title: "EcoShopAI",
+      description: "Hey, there! I help you make eco-friendly purchasing decisions with minimal environmental impact.",
+      ps: "",
+      youtube: "https://youtu.be/8GTJseYt7TA",
+      tutorial: "",
+      github: "",
+      demo: "https://chatgpt.com/g/g-rTTibE8p9-ecoshop-ai"
+    },
+    {
+      title: "MeWellAI",
+      description: "",
+      ps: "",
+      youtube: "https://youtu.be/eTCg3pfm69o",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/mentalwellness",
       demo: ""
     },
   ]
