@@ -325,42 +325,16 @@ export default function Home() {
           </h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">Discord</h3>
+              <h3 className="text-xl font-bold mb-4">Loading...</h3>
               <p className="text-lg mb-4">
-              Join our Discord community for real-time discussions, insights, and support.
+                Loading...
               </p>
               <a href="https://github.com/abdibrokhim/paper-ai-voice-assistant" 
                 className="text-[#335fff] hover:underline" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Join our Discord
-              </a>
-            </div>
-            <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">X</h3>
-              <p className="text-lg mb-4">
-                Follow us on X for updates, insights, and more.
-              </p>
-              <a href="https://discord.gg/nVtmDUN2sR" 
-                className="text-[#335fff] hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Follow us on X
-              </a>
-            </div>
-            <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">LinkedIn</h3>
-              <p className="text-lg mb-4">
-                Follow us on LinkedIn for updates, insights, and more. Let&apos;s connect!
-              </p>
-              <a href="https://www.linkedin.com/company/paperai/" 
-                className="text-[#335fff] hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Follow us on LinkedIn
+                Loading...
               </a>
             </div>
           </div>
@@ -375,16 +349,16 @@ export default function Home() {
           </h6>
           <div className="flex flex-col md:flex-row gap-8 border border-[var(--primary)] p-16">
             <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">Discord</h3>
+              <h3 className="text-xl font-bold mb-4">Loading...</h3>
               <p className="text-lg mb-4 text-[var(--text)]">
-              Join our Discord community for real-time discussions, insights, and support.
+                Loading...
               </p>
               <a href="https://github.com/abdibrokhim/paper-ai-voice-assistant" 
                 className="text-[#335fff] hover:underline" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Join our Discord
+                Loading...
               </a>
             </div>
           </div>
@@ -396,24 +370,11 @@ export default function Home() {
           </h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">Discord</h3>
-              <p className="text-lg mb-4 text-[var(--text)]">
-              Join our Discord community for real-time discussions, insights, and support.
-              </p>
-              <a href="https://github.com/abdibrokhim/paper-ai-voice-assistant" 
-                className="text-[#335fff] hover:underline" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Join our Discord
-              </a>
-            </div>
-            <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">X</h3>
+              <h3 className="text-xl font-bold mb-4">X (Twitter)</h3>
               <p className="text-lg mb-4 text-[var(--text)]">
                 Follow us on X for updates, insights, and more.
               </p>
-              <a href="https://discord.gg/nVtmDUN2sR" 
+              <a href="https://x.com/xopencommunity" 
                 className="text-[#335fff] hover:underline"
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -426,12 +387,25 @@ export default function Home() {
               <p className="text-lg mb-4 text-[var(--text)]">
                 Follow us on LinkedIn for updates, insights, and more. Let&apos;s connect!
               </p>
-              <a href="https://www.linkedin.com/company/paperai/" 
+              <a href="https://www.linkedin.com/company/opencommunity/" 
                 className="text-[#335fff] hover:underline"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 Follow us on LinkedIn
+              </a>
+            </div>
+            <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
+              <h3 className="text-xl font-bold mb-4">Book a Call</h3>
+              <p className="text-lg mb-4 text-[var(--text)]">
+                Book a call with us to discuss your project, partnership, or any other inquiries.
+              </p>
+              <a href="https://topmate.io/abdibrokhim/1291447" 
+                className="text-[#335fff] hover:underline"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Book a Call
               </a>
             </div>
           </div>
@@ -446,7 +420,7 @@ export default function Home() {
         <div className="flex gap-2 flex-wrap items-center justify-center">
           <a
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
-              href=""
+              href="https://github.com/abdibrokhim?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -460,7 +434,7 @@ export default function Home() {
           </a>
           <a
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
-              href=""
+              href="https://discord.gg/nVtmDUN2sR"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -474,7 +448,7 @@ export default function Home() {
             </a>
             <a
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
-              href=""
+              href="https://linkedin.com/company/opencommunity"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -488,7 +462,7 @@ export default function Home() {
             </a>
             <a
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
-              href=""
+              href="https://x.com/xopencommunity"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -502,7 +476,7 @@ export default function Home() {
             </a>
             <a
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
-              href=""
+              href="https://instagram.com/theopencommunity"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -516,7 +490,7 @@ export default function Home() {
             </a>
             <a
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
-              href=""
+              href="https://youtube.com/@theopencommunity"
               target="_blank"
               rel="noopener noreferrer"
             >
