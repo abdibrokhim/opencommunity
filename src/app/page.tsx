@@ -6,6 +6,7 @@ import React, { useState } from "react";
 export default function Home() {
   const portfolio = [
     {
+      cover: "/portfolio/comed.png",
       title: "CoMed",
       description: "an Open-source, AI-powered, and completely Autonomous Brain MRI analysis & diagnosis platform for doctors to help their patients.",
       ps: "",
@@ -15,24 +16,7 @@ export default function Home() {
       demo: "https://comedai.vercel.app/"
     },
     {
-      title: "PrepAlly",
-      description: "an Open-source, AI-powered coding prep platform, offering real-time feedback, voice-guided insights, and secure, interactive practice.",
-      ps: "",
-      youtube: "https://youtu.be/wyp8tRTLLfQ",
-      tutorial: "https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md",
-      github: "https://github.com/abdibrokhim/ai-coding-interviewer",
-      demo: ""
-    },
-    {
-      title: "HumanAIze",
-      description: "Transform your AI-generated content into natural, human-like text with the ultimate HumanAIze AI text tool.",
-      ps: "",
-      youtube: "https://youtu.be/CLrENdjIe58",
-      tutorial: "https://dev.to/abdibrokhim/step-by-step-tutorial-on-building-an-ai-text-humanizer-with-aiml-api-and-integration-with-clerk-auth-and-deploying-to-vercel-moj",
-      github: "https://github.com/abdibrokhim/humanaize",
-      demo: "https://humanaize.vercel.app/"
-    },
-    {
+      cover: "/portfolio/paperai.png",
       title: "PaperAI",
       description: "an Open-source, AI-powered research companion that streamlines literature reviews, enhances real-time collaboration, and offers a smart voice assistant to revolutionize your research experience.",
       ps: "",
@@ -42,6 +26,27 @@ export default function Home() {
       demo: ""
     },
     {
+      cover: "/portfolio/prepally.png",
+      title: "PrepAlly",
+      description: "an Open-source, AI-powered coding prep platform, offering real-time feedback, voice-guided insights, and secure, interactive practice.",
+      ps: "",
+      youtube: "https://youtu.be/wyp8tRTLLfQ",
+      tutorial: "https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md",
+      github: "https://github.com/abdibrokhim/ai-coding-interviewer",
+      demo: ""
+    },
+    {
+      cover: "/portfolio/humanaize.png",
+      title: "HumanAIze",
+      description: "Transform your AI-generated content into natural, human-like text with the ultimate HumanAIze AI text tool.",
+      ps: "",
+      youtube: "https://youtu.be/CLrENdjIe58",
+      tutorial: "https://dev.to/abdibrokhim/step-by-step-tutorial-on-building-an-ai-text-humanizer-with-aiml-api-and-integration-with-clerk-auth-and-deploying-to-vercel-moj",
+      github: "https://github.com/abdibrokhim/humanaize",
+      demo: "https://humanaize.vercel.app/"
+    },
+    {
+      cover: "/portfolio/aistickermaker.png",
       title: "AI Sticker Maker",
       description: "Generate AI stickers with a single prompt at a time. The coolest AI Sticker Maker in the market.",
       ps: "",
@@ -51,6 +56,7 @@ export default function Home() {
       demo: "https://ai-sticker-maker.vercel.app"
     },
     {
+      cover: "/portfolio/nextgeno1.png",
       title: "NextGen o1",
       description: "Overcomes the OpenAI o1 model's limitations by enabling browsing, file uploads, and system messages. Break free from restrictions and experience real-time data access, advanced workflows, and task automation with NextGen o1.",
       ps: "",
@@ -60,6 +66,7 @@ export default function Home() {
       demo: ""
     },
     {
+      cover: "/portfolio/monkeytypeai.png",
       title: "MonkeytypeAI",
       description: "A minimalistic and customizable AI-powered typing test. Adjust user-configurable features such as themes, typing contents and more by simply generating using AI.",
       ps: "",
@@ -69,6 +76,7 @@ export default function Home() {
       demo: "https://monkeytypeai.vercel.app/"
     },
     {
+      cover: "/portfolio/langflowai.png",
       title: "LangflowAI",
       description: "We automate Langflow with AI. No more drag and drop. Simply dictate and AI gets the work done!",
       ps: "",
@@ -78,6 +86,7 @@ export default function Home() {
       demo: "https://langflow-4fi8.onrender.com/"
     },
     {
+      cover: "/portfolio/lovido.png",
       title: "lovido",
       description: "Free and open-source platform for downloading Loom videos. It's designed to help free Loom account users who are unable to download their recordings directly through the Loom platform.",
       ps: "",
@@ -87,6 +96,7 @@ export default function Home() {
       demo: "https://lovido.lol"
     },
     {
+      cover: "/portfolio/storyai.png",
       title: "StoryAI",
       description: "StoryAI presents climate change data in a story format that can be generated according to the user's interests and level of academic knowledge in the field. Never get lost in the data again - StoryAI not only sorts through the data to make it more understandable and interactive for you, but also provides the context for various climate change phenomena. There is no doubt that climate change is happening, and we think that people of all ages and educational backgrounds should be aware of it and get ready to act: to stand with Earth and the sustainable future of humanity. StoryAI presents climate change data in a story format that can be generated according to the user's interests and level of academic knowledge in the field.",
       ps: "",
@@ -96,6 +106,17 @@ export default function Home() {
       demo: "https://chatgpt.com/g/g-PRa3ZXK36-story-ai"
     },
     {
+      cover: "/portfolio/ecoshopai.png",
+      title: "EcoShopAI",
+      description: "Hey, there! I help you make eco-friendly purchasing decisions with minimal environmental impact.",
+      ps: "",
+      youtube: "https://youtu.be/8GTJseYt7TA",
+      tutorial: "",
+      github: "",
+      demo: "https://chatgpt.com/g/g-rTTibE8p9-ecoshop-ai"
+    },
+    {
+      cover: "/portfolio/aimagicflashcards.png",
       title: "AI Magic Flashcards",
       description: "Generate flashcards simple invoke your imagination. Guess others flashcards and earn points. Exchange points to extra flashcard generations or cash them out (soon).",
       ps: "",
@@ -105,6 +126,7 @@ export default function Home() {
       demo: "https://ai-magic-flashcards.vercel.app/"
     },
     {
+      cover: "/portfolio/chatwithpdf.png",
       title: "Chat With PDF",
       description: "",
       ps: "",
@@ -114,6 +136,7 @@ export default function Home() {
       demo: "https://crunchgpt.vercel.app/"
     },
     {
+      cover: "/portfolio/harmonyquest.png",
       title: "Harmony Quest",
       description: "Harmony Quest is an engaging multiplayer game that combines creativity, guessing, and social interaction. Players can generate images and audio, then challenge their friends to guess what they are.",
       ps: "",
@@ -123,39 +146,46 @@ export default function Home() {
       demo: ""
     },
     {
-      title: "Harmony Quest",
-      description: "Harmony Quest is an engaging multiplayer game that combines creativity, guessing, and social interaction. Players can generate images and audio, then challenge their friends to guess what they are.",
-      ps: "",
-      youtube: "https://youtu.be/6opWWYy7yos",
-      tutorial: "",
-      github: "https://github.com/abdibrokhim/aiio",
-      demo: ""
-    },
-    {
-      title: "EcoShopAI",
-      description: "Hey, there! I help you make eco-friendly purchasing decisions with minimal environmental impact.",
-      ps: "",
-      youtube: "https://youtu.be/8GTJseYt7TA",
-      tutorial: "",
-      github: "",
-      demo: "https://chatgpt.com/g/g-rTTibE8p9-ecoshop-ai"
-    },
-    {
-      title: "EcoShopAI",
-      description: "Hey, there! I help you make eco-friendly purchasing decisions with minimal environmental impact.",
-      ps: "",
-      youtube: "https://youtu.be/8GTJseYt7TA",
-      tutorial: "",
-      github: "",
-      demo: "https://chatgpt.com/g/g-rTTibE8p9-ecoshop-ai"
-    },
-    {
+      cover: "/portfolio/mentalwellness.png",
       title: "MeWellAI",
       description: "",
       ps: "",
       youtube: "https://youtu.be/eTCg3pfm69o",
       tutorial: "",
       github: "https://github.com/abdibrokhim/mentalwellness",
+      demo: ""
+    },
+  ]
+
+  const toppicks = [
+    {
+      cover: "/portfolio/comed.png",
+      title: "CoMed",
+      description: "an Open-source, AI-powered, and completely Autonomous Brain MRI analysis & diagnosis platform for doctors to help their patients.",
+      ps: "",
+      youtube: "https://youtu.be/-umYRToyuQ4",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/comed-web",
+      demo: "https://comedai.vercel.app/"
+    },
+    {
+      cover: "/portfolio/paperai.png",
+      title: "PaperAI",
+      description: "an Open-source, AI-powered research companion that streamlines literature reviews, enhances real-time collaboration, and offers a smart voice assistant to revolutionize your research experience.",
+      ps: "",
+      youtube: "https://youtu.be/E7d1rLyXXVE",
+      tutorial: "",
+      github: "https://github.com/abdibrokhim/paper-ai-voice-assistant",
+      demo: ""
+    },
+    {
+      cover: "/portfolio/prepally.png",
+      title: "PrepAlly",
+      description: "an Open-source, AI-powered coding prep platform, offering real-time feedback, voice-guided insights, and secure, interactive practice.",
+      ps: "",
+      youtube: "https://youtu.be/wyp8tRTLLfQ",
+      tutorial: "https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md",
+      github: "https://github.com/abdibrokhim/ai-coding-interviewer",
       demo: ""
     },
   ]
@@ -169,7 +199,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-5 pb-20 font-[family-name:var(--font-geist-sans)]">
       {/* Header Section */}
-      <header className="w-full flex justify-between items-center bg-[#111216] border-b-[0.1px] border-[#A1A2A5] sticky top-0 py-2 px-4 md:px-8 border-opacity-50 z-50">
+      <header className="w-full flex justify-between items-center bg-[#111216] border-b-[0.1px] border-[#A1A2A5] sticky top-0 py-2 px-4 md:px-8 border-opacity-30 z-50">
         <div>
           <a
             className="flex justify-center items-center gap-2"
@@ -231,7 +261,7 @@ export default function Home() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full sm:w-[50%] w-full bg-[#1f2024] shadow-lg z-50 transform sm:border-l-[0.1px] sm:border-[#A1A2A5] sm:border-opacity-50 ${
+        className={`fixed top-0 right-0 h-full sm:w-[50%] w-full bg-[#1f2024] shadow-lg z-50 transform sm:border-l-[0.1px] sm:border-[#A1A2A5] sm:border-opacity-30 ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}
       >
@@ -296,7 +326,7 @@ export default function Home() {
           style={{ backgroundImage: "url('/back_drop.png')" }}
         >
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
           {/* Content */}
           <div className="relative z-10 text-center px-4">
@@ -323,20 +353,107 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-8">
             Top Picks
           </h2>
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">Loading...</h3>
-              <p className="text-lg mb-4">
-                Loading...
-              </p>
-              <a href="https://github.com/abdibrokhim/paper-ai-voice-assistant" 
-                className="text-[#335fff] hover:underline" 
-                target="_blank" 
-                rel="noopener noreferrer"
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {toppicks.map((project, index) => (
+              <div
+                key={index}
+                className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1"
               >
-                Loading...
-              </a>
-            </div>
+                {/* Display cover image if available */}
+                {project.cover && (
+                  <Image
+                    src={project.cover}
+                    alt={project.title}
+                    width={500}
+                    height={300}
+                    className="mb-4 rounded"
+                  />
+                )}
+                <h3 className="text-xl font-bold mb-4">{project.title}</h3>
+                <p className="text-lg mb-4 text-[var(--text)]">
+                  {project.description}
+                </p>
+                {/* Links */}
+                <div className="flex flex-wrap gap-4">
+                  {project.youtube && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.youtube}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/socials/youtube.svg"
+                        alt="YouTube icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        Watch on YouTube
+                      </span>
+                    </a>
+                  )}
+                  {project.tutorial && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.tutorial}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/file.svg"
+                        alt="Tutorial icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        Build from Scratch
+                      </span>
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/socials/github-mark-white.svg"
+                        alt="GitHub icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        View on GitHub
+                      </span>
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/globe.svg"
+                        alt="Demo icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        Live Demo
+                      </span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         {/* Portfolio Section */}
@@ -347,20 +464,107 @@ export default function Home() {
           <h6 className="text-md font-bold text-center mb-8 text-[var(--text)]">
             An open-source and AI-powered...
           </h6>
-          <div className="flex flex-col md:flex-row gap-8 border border-[var(--primary)] p-16">
-            <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">Loading...</h3>
-              <p className="text-lg mb-4 text-[var(--text)]">
-                Loading...
-              </p>
-              <a href="https://github.com/abdibrokhim/paper-ai-voice-assistant" 
-                className="text-[#335fff] hover:underline" 
-                target="_blank" 
-                rel="noopener noreferrer"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {portfolio.map((project, index) => (
+              <div
+                key={index}
+                className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1"
               >
-                Loading...
-              </a>
-            </div>
+                {/* Display cover image if available */}
+                {project.cover && (
+                  <Image
+                    src={project.cover}
+                    alt={project.title}
+                    width={500}
+                    height={300}
+                    className="mb-4 rounded"
+                  />
+                )}
+                <h3 className="text-xl font-bold mb-4">{project.title}</h3>
+                <p className="text-lg mb-4 text-[var(--text)]">
+                  {project.description}
+                </p>
+                {/* Links */}
+                <div className="flex flex-wrap gap-4">
+                  {project.youtube && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.youtube}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/socials/youtube.svg"
+                        alt="YouTube icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        Watch on YouTube
+                      </span>
+                    </a>
+                  )}
+                  {project.tutorial && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.tutorial}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/file.svg"
+                        alt="Tutorial icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        Build from Scratch
+                      </span>
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/socials/github-mark-white.svg"
+                        alt="GitHub icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        View on GitHub
+                      </span>
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/globe.svg"
+                        alt="Demo icon"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="hidden group-hover:inline ml-2">
+                        Live Demo
+                      </span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         {/* Community Section */}
