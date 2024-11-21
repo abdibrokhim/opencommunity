@@ -9,7 +9,7 @@ export default function Home() {
     {
       cover: "/portfolio/comed.png",
       title: "CoMed",
-      description: "an Open-source, AI-powered, and completely Autonomous Brain MRI analysis & diagnosis platform for doctors to help their patients.",
+      description: "An AI platform transforming Brain MRI diagnostics to be easier, faster, and more accessible, especially in underserved rural areas. By integrating advanced AI into hospital workflows, we boost diagnostic accuracy from 84% to 95% and reduce waiting times from days to 15-30 minutes. Targeting hospitals and clinics lacking advanced diagnostics and radiologists, we aim to bridge critical healthcare gaps.",
       ps: "",
       youtube: "https://youtu.be/-umYRToyuQ4",
       tutorial: "",
@@ -19,17 +19,17 @@ export default function Home() {
     {
       cover: "/portfolio/paperai.png",
       title: "PaperAI",
-      description: "an Open-source, AI-powered research companion that streamlines literature reviews, enhances real-time collaboration, and offers a smart voice assistant to revolutionize your research experience.",
+      description: "Researchers and scholars often face challenges like information overload and time-consuming literature review. Aside from making personal notes, Paper Ai enables users to annotate, discuss collaboratively and ask AI for quick summary on complex points across a piece of article or research paper. It fosters a shared learning ecosystem and encourages collaboration across disciplines and geographic boundaries.",
       ps: "",
       youtube: "https://youtu.be/E7d1rLyXXVE",
       tutorial: "",
       github: "https://github.com/abdibrokhim/paper-ai-voice-assistant",
-      demo: ""
+      demo: "https://paperai.pro"
     },
     {
       cover: "/portfolio/prepally.png",
       title: "PrepAlly",
-      description: "an Open-source, AI-powered coding prep platform, offering real-time feedback, voice-guided insights, and secure, interactive practice.",
+      description: "Current tools offer practice but fall short of providing the interactive, AI-driven insights candidates need to feel truly prepared. Interviews are still notoriously stressful, leaving candidates feeling unprepared despite available resources. PrepAlly changes that by delivering real-time feedback and personalized insights, empowering candidates with the confidence and readiness to ace their interviews.",
       ps: "",
       youtube: "https://youtu.be/wyp8tRTLLfQ",
       tutorial: "https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md",
@@ -39,7 +39,7 @@ export default function Home() {
     {
       cover: "/portfolio/humanaize.png",
       title: "HumanAIze",
-      description: "Transform your AI-generated content into natural, human-like text with the ultimate HumanAIze AI text tool.",
+      description: "Transform your AI-generated content into natural, human-like text with the ultimate HumanAIze AI text tool. This ai-to-human text converter effortlessly converts output from ChatGPT, Bard, Jasper, Grammarly, GPT4, and other AI text generators into text indistinguishable from human writing. Achieve 100% originality and enhance your content creation with the best HumanAIze AI solution available.",
       ps: "",
       youtube: "https://youtu.be/CLrENdjIe58",
       tutorial: "https://dev.to/abdibrokhim/step-by-step-tutorial-on-building-an-ai-text-humanizer-with-aiml-api-and-integration-with-clerk-auth-and-deploying-to-vercel-moj",
@@ -49,7 +49,7 @@ export default function Home() {
     {
       cover: "/portfolio/aistickermaker.png",
       title: "AI Sticker Maker",
-      description: "Generate AI stickers with a single prompt at a time. The coolest AI Sticker Maker in the market.",
+      description: "Our AI sticker generator simplifies the sticker design process. In just seconds, you can effortlessly transform your ideas into custom stickers. Just enter a short description of your sticker design idea, and our AI will automatically generate multiple stickers that match your vision. No design skills are needed at all. Get high-quality, print-ready stickers effortlessly with AI.",
       ps: "",
       youtube: "",
       tutorial: "https://dev.to/abdibrokhim/building-an-ai-sticker-maker-platform-with-aiml-api-nextjs-react-and-tailwind-css-using-openai-gpt-4o-and-dalle-3-models-46ip",
@@ -59,7 +59,7 @@ export default function Home() {
     {
       cover: "/portfolio/nextgeno1.png",
       title: "NextGen o1",
-      description: "Overcomes the OpenAI o1 model's limitations by enabling browsing, file uploads, and system messages. Break free from restrictions and experience real-time data access, advanced workflows, and task automation with NextGen o1.",
+      description: "NextGen o1 overcomes the limitations of the OpenAI o1 model by adding critical functionalities. It introduces seamless browsing support, file uploads, and system messages, transforming the model into a powerful assistant capable of handling real-world tasks. Whether accessing real-time data, interacting with documents, or automating workflows, NextGen o1 delivers an unrestricted AI experience.",
       ps: "",
       youtube: "https://youtu.be/_wTaMLL4by0",
       tutorial: "",
@@ -69,7 +69,7 @@ export default function Home() {
     {
       cover: "/portfolio/monkeytypeai.png",
       title: "MonkeytypeAI",
-      description: "A minimalistic and customizable AI-powered typing test. Adjust user-configurable features such as themes, typing contents and more by simply generating using AI.",
+      description: "A minimalistic and customizable AI-powered typing test. Adjust user-configurable features such as themes, typing contents and more by simply generating using AI. When a user makes a typing mistake, the app instantly regenerates the current word, creating a new, correct English word that continues from the mistaken letter. This means users no longer need to stop and correct errors manually, allowing for a smoother and more efficient typing process.",
       ps: "",
       youtube: "https://youtu.be/SGibxV1YHDo",
       tutorial: "",
@@ -79,7 +79,7 @@ export default function Home() {
     {
       cover: "/portfolio/langflowai.png",
       title: "LangflowAI",
-      description: "We automate Langflow with AI. No more drag and drop. Simply dictate and AI gets the work done!",
+      description: "We automate Langflow with AI. No more drag and drop. Simply dictate and AI gets the work done! PS: Langflow is a low-code app builder for RAG and multi-agent AI applications. It's Python-based and agnostic to any model, API, or database. ",
       ps: "",
       youtube: "https://youtu.be/d9eJJHAp8v8",
       tutorial: "",
@@ -99,7 +99,7 @@ export default function Home() {
     {
       cover: "/portfolio/storyai.png",
       title: "StoryAI",
-      description: "StoryAI presents climate change data in a story format that can be generated according to the user's interests and level of academic knowledge in the field. Never get lost in the data again - StoryAI not only sorts through the data to make it more understandable and interactive for you, but also provides the context for various climate change phenomena. There is no doubt that climate change is happening, and we think that people of all ages and educational backgrounds should be aware of it and get ready to act: to stand with Earth and the sustainable future of humanity. StoryAI presents climate change data in a story format that can be generated according to the user's interests and level of academic knowledge in the field.",
+      description: "StoryAI presents climate change data in a story format that can be generated according to the user's interests and level of academic knowledge in the field.",
       ps: "",
       youtube: "https://youtu.be/-IPLUUTiZak",
       tutorial: "",
@@ -109,7 +109,7 @@ export default function Home() {
     {
       cover: "/portfolio/ecoshopai.png",
       title: "EcoShopAI",
-      description: "Hey, there! I help you make eco-friendly purchasing decisions with minimal environmental impact.",
+      description: "Your personal shopping assistant for a greener lifestyle. It helps you find products that are not only good for you but also kind to the planet. Simply tell it what you're looking for, and it suggests eco-friendly alternatives with less environmental impact. Whether you're shopping for clothes, gadgets, or groceries, EcoShop AI provides real-time recommendations and even shows you how much you're reducing your carbon footprint with each choice. It's like having an eco-expert in your pocket!",
       ps: "",
       youtube: "https://youtu.be/8GTJseYt7TA",
       tutorial: "",
@@ -129,7 +129,7 @@ export default function Home() {
     {
       cover: "/portfolio/chatwithpdf.png",
       title: "Chat With PDF",
-      description: "",
+      description: "Join millions of students, researchers and professionals to instantly answer questions and understand research with AI.",
       ps: "",
       youtube: "https://youtu.be/AAy8ejtgBh4",
       tutorial: "",
@@ -149,7 +149,7 @@ export default function Home() {
     {
       cover: "/portfolio/mentalwellness.png",
       title: "MeWellAI",
-      description: "",
+      description: "MeWellAI is an AI-powered mobile application designed to revolutionize mental wellness support by combining the familiarity of social media with personalized mental health assistance. By leveraging specialized AI \"Agents\" for specific mental health areas, MeWellAI provides users with accessible, engaging, and tailored support to improve their overall well-being.",
       ps: "",
       youtube: "https://youtu.be/eTCg3pfm69o",
       tutorial: "",
@@ -162,7 +162,7 @@ export default function Home() {
     {
       cover: "/portfolio/comed.png",
       title: "CoMed",
-      description: "an Open-source, AI-powered, and completely Autonomous Brain MRI analysis & diagnosis platform for doctors to help their patients.",
+      description: "An AI platform transforming Brain MRI diagnostics to be easier, faster, and more accessible, especially in underserved rural areas. By integrating advanced AI into hospital workflows, we boost diagnostic accuracy from 84% to 95% and reduce waiting times from days to 15-30 minutes. Targeting hospitals and clinics lacking advanced diagnostics and radiologists, we aim to bridge critical healthcare gaps.",
       ps: "",
       youtube: "https://youtu.be/-umYRToyuQ4",
       tutorial: "",
@@ -172,17 +172,17 @@ export default function Home() {
     {
       cover: "/portfolio/paperai.png",
       title: "PaperAI",
-      description: "an Open-source, AI-powered research companion that streamlines literature reviews, enhances real-time collaboration, and offers a smart voice assistant to revolutionize your research experience.",
+      description: "Researchers and scholars often face challenges like information overload and time-consuming literature review. Aside from making personal notes, Paper Ai enables users to annotate, discuss collaboratively and ask AI for quick summary on complex points across a piece of article or research paper. It fosters a shared learning ecosystem and encourages collaboration across disciplines and geographic boundaries.",
       ps: "",
       youtube: "https://youtu.be/E7d1rLyXXVE",
       tutorial: "",
       github: "https://github.com/abdibrokhim/paper-ai-voice-assistant",
-      demo: ""
+      demo: "https://paperai.pro"
     },
     {
       cover: "/portfolio/prepally.png",
       title: "PrepAlly",
-      description: "an Open-source, AI-powered coding prep platform, offering real-time feedback, voice-guided insights, and secure, interactive practice.",
+      description: "Current tools offer practice but fall short of providing the interactive, AI-driven insights candidates need to feel truly prepared. Interviews are still notoriously stressful, leaving candidates feeling unprepared despite available resources. PrepAlly changes that by delivering real-time feedback and personalized insights, empowering candidates with the confidence and readiness to ace their interviews.",
       ps: "",
       youtube: "https://youtu.be/wyp8tRTLLfQ",
       tutorial: "https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md",
@@ -227,14 +227,14 @@ export default function Home() {
             href="#toppicks"
             rel="noopener noreferrer"
           >
-            Top Picks
+            Most Popular
           </a>
           <a
             className="hover:text-[#A1A2A5] transition"
             href="#portfolio"
             rel="noopener noreferrer"
           >
-            Portfolio
+            Solution
           </a>
           <a
             className="hover:text-[#A1A2A5] transition"
@@ -253,7 +253,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/menu.svg"
+            src="/essentials/menu.svg"
             alt="menu icon"
             width={22}
             height={22}
@@ -276,7 +276,7 @@ export default function Home() {
             className="hover:bg-[#A1A2A5] hover:bg-opacity-10 rounded-full p-3">
             <Image
               aria-hidden
-              src="/close.svg"
+              src="/essentials/close.svg"
               alt="close icon"
               width={22}
               height={22}
@@ -292,7 +292,7 @@ export default function Home() {
             rel="noopener noreferrer"
             onClick={toggleSidebar}
           >
-            Top Picks
+            Most Popular
           </a>
           <a
             className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
@@ -300,7 +300,7 @@ export default function Home() {
             rel="noopener noreferrer"
             onClick={toggleSidebar}
           >
-            Portfolio
+            Solution
           </a>
           <a
             className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
@@ -325,7 +325,7 @@ export default function Home() {
         {/* background image, h1 text, button that scrolls next section, min-h-screeen should be text very bottom in the visible area */}
         <div
           className="w-full min-h-screen flex flex-col items-center justify-center bg-cover bg-center relative sm:p-20 p-8"
-          style={{ backgroundImage: "url('/back_drop.png')" }}
+          style={{ backgroundImage: "url('/assets/back_drop.png')" }}
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-30"></div>
@@ -346,14 +346,21 @@ export default function Home() {
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Explore Here
+              Explore Here <Image
+                aria-hidden
+                src="/essentials/arrow-left.svg"
+                alt="Arrow left icon"
+                width={18}
+                height={18}
+                className="inline w-[14px] h-[14px] ml-2"
+              />
             </button>
           </div>
         </div>
         {/* Top Picks Section */}
-        <div className="my-16 w-full sm:p-20 p-8" id="toppicks">
+        <div className="w-full sm:p-20 p-8" id="toppicks">
           <h2 className="text-3xl font-bold text-center mb-8">
-            Top Picks
+            Most Popular
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {toppicks.map((project, index) => (
@@ -364,15 +371,15 @@ export default function Home() {
                 {/* Display cover image if available */}
                 {project.cover && (
                   <Image
-                    src={project.cover}
+                    src="/assets/intro.png"
                     alt={project.title}
                     width={500}
                     height={300}
-                    className="mb-4 rounded"
+                    className="mb-4 rounded w-full"
                   />
                 )}
                 <h3 className="text-xl font-bold mb-4">{project.title}</h3>
-                <p className="text-lg mb-4 text-[var(--text)]">
+                <p className="text-md md:text-lg mb-4 text-[var(--text)]">
                   {project.description}
                 </p>
                 {/* Links */}
@@ -405,7 +412,7 @@ export default function Home() {
                     >
                       <Image
                         aria-hidden
-                        src="/file.svg"
+                        src="/essentials/file.svg"
                         alt="Tutorial icon"
                         width={22}
                         height={22}
@@ -443,7 +450,7 @@ export default function Home() {
                     >
                       <Image
                         aria-hidden
-                        src="/globe.svg"
+                        src="/essentials/globe.svg"
                         alt="Demo icon"
                         width={22}
                         height={22}
@@ -459,9 +466,9 @@ export default function Home() {
           </div>
         </div>
         {/* Portfolio Section */}
-        <div className="my-16 w-full sm:p-20 p-8" id="portfolio">
+        <div className="w-full sm:p-20 p-8" id="portfolio">
           <h2 className="text-3xl font-bold text-center mb-8">
-            Portfolio
+            Solution
           </h2>
           <h6 className="text-md font-bold text-center mb-8 text-[var(--text)]">
             An open-source and AI-powered...
@@ -475,15 +482,15 @@ export default function Home() {
                 {/* Display cover image if available */}
                 {project.cover && (
                   <Image
-                    src={project.cover}
+                    src="/assets/intro.png"
                     alt={project.title}
                     width={500}
                     height={300}
-                    className="mb-4 rounded"
+                    className="mb-4 rounded w-full"
                   />
                 )}
                 <h3 className="text-xl font-bold mb-4">{project.title}</h3>
-                <p className="text-lg mb-4 text-[var(--text)]">
+                <p className="text-md md:text-lg mb-4 text-[var(--text)]">
                   {project.description}
                 </p>
                 {/* Links */}
@@ -516,7 +523,7 @@ export default function Home() {
                     >
                       <Image
                         aria-hidden
-                        src="/file.svg"
+                        src="/essentials/file.svg"
                         alt="Tutorial icon"
                         width={22}
                         height={22}
@@ -554,7 +561,7 @@ export default function Home() {
                     >
                       <Image
                         aria-hidden
-                        src="/globe.svg"
+                        src="/essentials/globe.svg"
                         alt="Demo icon"
                         width={22}
                         height={22}
@@ -570,7 +577,7 @@ export default function Home() {
           </div>
         </div>
         {/* Community Section */}
-        <div className="my-16 w-full sm:p-20 p-8" id="contact">
+        <div className="w-full sm:p-20 p-8" id="contact">
           <h2 className="text-3xl font-bold text-center mb-8">
           Say Hello!
           </h2>
@@ -580,39 +587,72 @@ export default function Home() {
               <p className="text-lg mb-4 text-[var(--text)]">
                 Follow us on X for updates, insights, and more.
               </p>
-              <a href="https://x.com/xopencommunity" 
-                className="text-[#335fff] hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Follow us on X
-              </a>
+              <div
+                className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
+                <a href="https://x.com/xopencommunity" 
+                  className="text-[#ffffff] hover:underline"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Follow us on X
+                </a>
+                <Image
+                  aria-hidden
+                  src="/essentials/arrow-top.svg"
+                  alt="Demo icon"
+                  width={22}
+                  height={22}
+                  className="inline"
+                />
+              </div>
             </div>
             <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
               <h3 className="text-xl font-bold mb-4">LinkedIn</h3>
               <p className="text-lg mb-4 text-[var(--text)]">
                 Follow us on LinkedIn for updates, insights, and more. Let&apos;s connect!
               </p>
-              <a href="https://www.linkedin.com/company/opencommunity/" 
-                className="text-[#335fff] hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Follow us on LinkedIn
-              </a>
+              <div
+                className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
+                <a href="https://www.linkedin.com/company/opencommunity/" 
+                  className="text-[#ffffff] hover:underline"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Follow us on LinkedIn
+                </a>
+                <Image
+                  aria-hidden
+                  src="/essentials/arrow-top.svg"
+                  alt="Demo icon"
+                  width={22}
+                  height={22}
+                  className="inline"
+                />
+              </div>
             </div>
             <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
               <h3 className="text-xl font-bold mb-4">Book a Call</h3>
               <p className="text-lg mb-4 text-[var(--text)]">
                 Book a call with us to discuss your project, partnership, or any other inquiries.
               </p>
-              <a href="https://topmate.io/abdibrokhim/1291447" 
-                className="text-[#335fff] hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Book a Call
-              </a>
+              <div
+                className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
+                <a href="https://topmate.io/abdibrokhim/1291447" 
+                  className="text-[#ffffff] hover:underline"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Book a Call
+                </a>
+                <Image
+                  aria-hidden
+                  src="/essentials/arrow-top.svg"
+                  alt="Demo icon"
+                  width={22}
+                  height={22}
+                  className="inline"
+                />
+              </div>
             </div>
           </div>
         </div>
