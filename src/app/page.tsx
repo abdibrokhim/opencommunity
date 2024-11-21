@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   const portfolio = [
@@ -198,6 +199,7 @@ export default function Home() {
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-5 pb-20 font-[family-name:var(--font-geist-sans)]">
+      <Analytics />
       {/* Header Section */}
       <header className="w-full flex justify-between items-center bg-[#111216] border-b-[0.1px] border-[#A1A2A5] sticky top-0 py-2 px-4 md:px-8 border-opacity-30 z-50">
         <div>
