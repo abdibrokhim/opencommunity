@@ -104,6 +104,13 @@ export default function Header() {
             </a>
             <a
               className="hover:text-[#A1A2A5] transition"
+              href="#partners"
+              rel="noopener noreferrer"
+            >
+                Partners
+            </a>
+            <a
+              className="hover:text-[#A1A2A5] transition"
               href="#contact"
               rel="noopener noreferrer"
             >
@@ -135,7 +142,23 @@ export default function Header() {
         >
           {/* Sidebar Top Bar */}
           <div className="w-full bg-[#111216] px-4 py-2 flex justify-between items-center">
-            <p className="text-lg font-bold text-[#ededed]">Hey, there!</p>
+            <div>
+              <a
+              className="flex justify-center items-center gap-2"
+              href="/"
+              rel="noopener noreferrer"
+            >
+              <Image
+                objectFit="contain"
+                src="/oc.png"
+                alt="Open Community Logo"
+                width={40}
+                height={40}
+                priority
+              />
+              <p className="text-2xl font-bold text-white">Open Community</p>
+            </a>
+            </div>
             <button
               onClick={toggleSidebar}
               aria-label="Close Sidebar"
@@ -174,6 +197,14 @@ export default function Header() {
               onClick={toggleSidebar}
             >
               Solution
+            </a>
+            <a
+              className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
+              href="#partners"
+              rel="noopener noreferrer"
+              onClick={toggleSidebar}
+            >
+                Partners
             </a>
             <a
               className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"

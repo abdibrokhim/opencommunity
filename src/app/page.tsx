@@ -10,11 +10,12 @@ import Portfolio from "./sections/portfolioSection";
 import TopPicks from "./sections/topPicksSection";
 import ContactUs from "./sections/contactUsSection";
 import GiveawayBanner from "./promos/banner";
+import Partners from "./sections/partnersSection";
 
 export default function Home() {
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-5 pb-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-5 pb-20 font-[family-name:var(--font-geist-sans)] scroll-smooth">
       <Analytics />
       {/* Header Section */}
       <Header />
@@ -62,6 +63,8 @@ export default function Home() {
         <Portfolio />
         {/* Giveaway Section */}
         <GiveawayBanner />
+        {/* Partners Section */}
+        <Partners />
         {/* Community Section */}
         <ContactUs />
       </main>

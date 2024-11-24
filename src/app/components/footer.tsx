@@ -6,12 +6,7 @@ import React, { useState } from "react";
 export default function Footer() {
 
   return (
-      <footer className="row-start-3 w-full space-y-8 md:space-y-0 flex flex-col md:flex-row justify-between items-center sm:p-20 p-8">
-        <div className="invisible md:visible">
-          <p className="text-sm text-center text-[var(--tint)]">
-            © 2024 Open Community. All rights reserved.
-          </p>
-        </div>
+      <footer className="row-start-3 w-full flex flex-col md:flex-row-reverse gap-8 mt-16 md:mt-0 justify-between items-center sm:p-20 p-8">
         <div className="flex gap-2 flex-wrap items-center justify-center">
           <a
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
@@ -98,7 +93,7 @@ export default function Footer() {
               />
             </a>
         </div>
-        <div className="md:hidden">
+        <div className="">
           <p className="text-sm text-center text-[var(--tint)]">
             © 2024 Open Community. All rights reserved.
           </p>
