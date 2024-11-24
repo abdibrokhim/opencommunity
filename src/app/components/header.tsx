@@ -5,10 +5,12 @@ import React, { useState, useEffect } from "react";
 import './styles.css';
 import GiveawayBanner from "../promos/banner";
 import OverlayCard from "../promos/overlaycard";
+import Trailer from "../promos/trailer";
 
 export default function Header() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
+  const [showTrailer, setShowTrailer] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -21,6 +23,10 @@ export default function Header() {
   const handleClose = () => {
     setShowOverlay(false);
   };
+
+  const handleTrailerClose = () => {
+    setShowTrailer(false);
+  }
 
 //   if (!showOverlay) return null;
 
@@ -52,7 +58,9 @@ export default function Header() {
         </div>
 
         {showOverlay && <OverlayCard handleClose={handleClose} />}
+        {showTrailer && <Trailer handleClose={handleTrailerClose} />}
 
+        {/* Header Content */}
         <div className="w-full flex justify-between items-center py-2 px-4 md:px-8">
           <div className="">
             <a
@@ -76,7 +84,7 @@ export default function Header() {
           <div className="hidden md:flex flex-row gap-6 justify-between items-center text-[#BBBCBE]">
             <button
               className="bg-[var(--button)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition"
-              onClick={() => {}}
+              onClick={() => setShowTrailer(true)}
             >
               Watch Trailer
             </button>
@@ -147,7 +155,7 @@ export default function Header() {
           <div className="p-4 flex flex-col gap-1">
             <button
               className="bg-[var(--button)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition"
-              onClick={() => {}}
+              onClick={() => setShowTrailer(true)}
             >
               Watch Trailer
             </button>
