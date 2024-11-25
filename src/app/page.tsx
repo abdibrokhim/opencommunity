@@ -15,7 +15,7 @@ import Partners from "./sections/partnersSection";
 export default function Home() {
 
   const [isPlaying, setIsPlaying] = useState(true);
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null); // Add type for the ref
 
   const toggleMusic = () => {
     if (audioRef.current) {
