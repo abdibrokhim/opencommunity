@@ -4,7 +4,7 @@ import Image from 'next/image';
 const OverlayCard = ({ handleClose }: { handleClose: () => void }) => {
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-8">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40 p-8">
       <div className="relative bg-[#1f2024] rounded-md p-4">
         {/* Close Button */}
         <button

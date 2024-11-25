@@ -6,6 +6,8 @@
   --primary: #335fff;
   --secondary: #528bff;
   --button: #3337FF;
+  --orange: #ee5d19;
+  --hover-orange: #ff6600;
   --tertiary: #1f2024;
   --surface: #e5e5e6;
   --tint: #A1A2A5;
@@ -21,6 +23,7 @@
     --primary: #335fff;
     --secondary: #528bff;
     --button: #3337FF;
+    --orange: #ee5d19;
     --tertiary: #1f2024;
     --surface: #e5e5e6;
     --tint: #A1A2A5;

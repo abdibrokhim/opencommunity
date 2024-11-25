@@ -5,7 +5,7 @@ import React from "react";
 
 const Trailer = ({ handleClose }: { handleClose: () => void }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4 sm:p-8">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-30 p-4 sm:p-8">
       <div className="relative bg-[#1f2024] rounded-md w-full max-w-5xl p-4 sm:p-6">
         {/* Close Button */}
         <button
@@ -24,10 +24,10 @@ const Trailer = ({ handleClose }: { handleClose: () => void }) => {
         {/* Content */}
         <div className="flex flex-col gap-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-white">
-            🐐 We just Dropped 🐐
+            Watch the Trailer 🎥
           </h2>
           <h6 className="text-sm sm:text-md font-bold text-center text-[var(--text)]">
-            Just follow us{" "}
+            follow us{" "}
             <a
               href="https://x.com/xopencommunity"
               target="_blank"

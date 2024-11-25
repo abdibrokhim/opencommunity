@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Analytics } from "@vercel/analytics/react"
 import { portfolio, toppicks } from "./components/projects_json_data";
 import Footer from "./components/footer";
@@ -14,9 +14,38 @@ import Partners from "./sections/partnersSection";
 
 export default function Home() {
 
+  const [isPlaying, setIsPlaying] = useState(true);
+  const audioRef = useRef(null);
+
+  const toggleMusic = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-5 pb-20 font-[family-name:var(--font-geist-sans)] scroll-smooth">
       <Analytics />
+      {/* Audio */}
+      <audio ref={audioRef} src="/album/MeWellAI.mp3" autoPlay loop />
+      {/* Toggle Button */}
+      <button
+        onClick={toggleMusic}
+        className="fixed top-32 right-5 z-40 bg-[var(--surface)] text-white p-2 rounded-full shadow-md hover:bg-[var(--tint)] transition"
+        aria-label="Toggle Music"
+      >
+        <Image
+          src="/essentials/note-music.svg"
+          alt="Music Note Icon"
+          width={24}
+          height={24}
+        />
+      </button>
       {/* Header Section */}
       <Header />
       {/* Main Section */}

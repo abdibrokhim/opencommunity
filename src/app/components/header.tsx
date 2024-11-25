@@ -6,11 +6,13 @@ import './styles.css';
 import GiveawayBanner from "../promos/banner";
 import OverlayCard from "../promos/overlaycard";
 import Trailer from "../promos/trailer";
+import Album from "../promos/album";
 
 export default function Header() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const [showTrailer, setShowTrailer] = useState(false);
+  const [showAlbum, setShowAlbum] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -28,6 +30,10 @@ export default function Header() {
     setShowTrailer(false);
   }
 
+    const handleCloseAlbum = () => {
+        setShowAlbum(false);
+    }
+
 //   if (!showOverlay) return null;
 
 
@@ -41,12 +47,26 @@ export default function Header() {
     setShowOverlay(true);
   };
 
+    const handleWatchTrailer = () => {
+        // Logic to call the Trailer component
+        console.log("Trailer called!");
+        setShowTrailer(true);
+        toggleSidebar();
+    };
+
+    const handleAlbumClick = () => {
+        // Logic to call the Album component
+        console.log("Album called!");
+        setShowAlbum(true);
+        toggleSidebar();
+    };
+
   return (
     <>
-      <header className="w-full flex flex-col justify-between items-center bg-[#111216] border-b-[0.1px] border-[#A1A2A5] sticky top-0 border-opacity-30 z-50">
+      <header className="w-full flex flex-col justify-between items-center bg-[#111216] border-b-[0.1px] border-[#A1A2A5] sticky top-0 border-opacity-30 z-30">
         
         {/* Giveaway Section */}
-        <div className="w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-2 z-50 overflow-hidden">
+        <div className="w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-2 z-30 overflow-hidden">
           <div
             className="flex whitespace-nowrap items-center animate-marquee cursor-pointer"
             onClick={handleGiveawayClick}
@@ -59,6 +79,7 @@ export default function Header() {
 
         {showOverlay && <OverlayCard handleClose={handleClose} />}
         {showTrailer && <Trailer handleClose={handleTrailerClose} />}
+        {showAlbum && <Album handleClose={handleCloseAlbum} />}
 
         {/* Header Content */}
         <div className="w-full flex justify-between items-center py-2 px-4 md:px-8">
@@ -82,11 +103,17 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-row gap-6 justify-between items-center text-[#BBBCBE]">
-            <button
+             <button
               className="bg-[var(--button)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition"
-              onClick={() => setShowTrailer(true)}
+              onClick={() => setShowAlbum(true)}
             >
-              Watch Trailer
+              AI Album - I AM STARTUP 🎵
+            </button>
+            <button
+              className="bg-[var(--orange)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[#ff6600] transition"
+              onClick={handleWatchTrailer}
+            >
+              Watch Trailer 🔥
             </button>
             <a
               className="hover:text-[#A1A2A5] transition"
@@ -178,10 +205,18 @@ export default function Header() {
           <div className="p-4 flex flex-col gap-1">
             <button
               className="bg-[var(--button)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition"
-              onClick={() => setShowTrailer(true)}
+              onClick={handleAlbumClick}
             >
-              Watch Trailer
+              AI Album - I AM STARTUP 🎵
             </button>
+            <button
+              className="mt-2 bg-[var(--orange)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[#ff6600] transition"
+              onClick={handleWatchTrailer}
+            >
+              Watch Trailer 🔥
+            </button>
+            {/* add devider below */}
+            <hr className="border-t-[0.1px] border-[#A1A2A5] border-opacity-30 mt-4" />
             <a
               className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
               href="#toppicks"
@@ -214,6 +249,8 @@ export default function Header() {
             >
               Contact Us
             </a>
+            {/* add devider below */}
+            <hr className="border-t-[0.1px] border-[#A1A2A5] border-opacity-30 mt-4" />
             <GiveawayBanner />
           </div>
         </div>
@@ -221,7 +258,7 @@ export default function Header() {
         {/* Sidebar Overlay */}
         {isSidebarOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0 bg-black bg-opacity-50 z-20"
             onClick={toggleSidebar}
           ></div>
         )}
