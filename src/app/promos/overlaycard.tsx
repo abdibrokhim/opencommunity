@@ -10,7 +10,7 @@ const OverlayCard = ({ handleClose }: { handleClose: () => void }) => {
         <button
           onClick={handleClose}
           aria-label="Close Sidebar"
-          className="absolute top-2 right-2 hover:bg-[#A1A2A5] hover:bg-opacity-10 rounded-full p-3"
+          className="absolute top-2 left-2 hover:bg-[#A1A2A5] hover:bg-opacity-10 rounded-full p-3"
         >
           <Image
             aria-hidden

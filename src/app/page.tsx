@@ -11,28 +11,40 @@ import TopPicks from "./sections/topPicksSection";
 import ContactUs from "./sections/contactUsSection";
 import GiveawayBanner from "./promos/banner";
 import Partners from "./sections/partnersSection";
+import Notification from './components/notify';
 
 export default function Home() {
 
   const [isPlaying, setIsPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null); // Add type for the ref
+  const [notification, setNotification] = useState<{ message: string; type: 'error' | 'success' | 'info' } | null>(null);  // notification message
 
   const toggleMusic = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
+    setNotification({ message: "We can't play music right now", type: "info" });
+
+    // if (audioRef.current) {
+    //   if (isPlaying) {
+    //     audioRef.current.pause();
+    //   } else {
+    //     console.log("Playing bg music");
+    //     // audioRef.current.play();
+    //   }
+    //   setIsPlaying(!isPlaying);
+    // }
   };
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-5 pb-20 font-[family-name:var(--font-geist-sans)] scroll-smooth">
       <Analytics />
+      {notification && (
+                <Notification
+                    message={notification.message}
+                    type={notification.type}
+                    onClose={() => setNotification(null)}
+                />
+            )}
       {/* Audio */}
-      <audio ref={audioRef} src="/album/MeWellAI.mp3" autoPlay loop />
+      <audio ref={audioRef} src="/album/MeWellAI.mp3" autoPlay={false} loop />
       {/* Toggle Button */}
       <button
         onClick={toggleMusic}

@@ -51,14 +51,14 @@ export default function Header() {
         // Logic to call the Trailer component
         console.log("Trailer called!");
         setShowTrailer(true);
-        toggleSidebar();
+        setSidebarOpen(false);
     };
 
     const handleAlbumClick = () => {
         // Logic to call the Album component
         console.log("Album called!");
         setShowAlbum(true);
-        toggleSidebar();
+        setSidebarOpen(false);
     };
 
   return (

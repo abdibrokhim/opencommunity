@@ -6,9 +6,12 @@ import React from "react";
 export default function Partners() {
   return (
     <div className="w-full p-8 sm:p-20 bg-gray-100" id="partners">
-      <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
+      <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
         Partners
       </h2>
+      <h6 className="text-md font-bold text-center mb-8 text-gray-600">
+        We are proud to be associated with the following partners.
+          </h6>
       <div className="flex flex-wrap justify-center gap-8">
         {/* Partner 1 */}
         <a
@@ -20,6 +23,22 @@ export default function Partners() {
           <Image
             src="/partners/aimlapi_logo_big_vector.svg"
             alt="AI/ML API"
+            width={200}
+            height={100}
+            className="object-contain"
+          />
+        </a>
+
+        {/* Partner 1 */}
+        <a
+          href="https://taipy.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-transform transform hover:scale-105 flex flex-col items-center justify-center"
+        >
+          <Image
+            src="/partners/Taipy-logo-color-with-safe-area-dark-bg.png"
+            alt="Taipy"
             width={200}
             height={100}
             className="object-contain"
