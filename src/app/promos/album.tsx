@@ -41,22 +41,35 @@ const Album = ({ handleClose }: { handleClose: () => void }) => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % albums.length);
   };
 
-  // Play the audio preview when the current index changes
   React.useEffect(() => {
-    const playAudio = async () => {
-      if (audioRef.current) {
-        setIsLoading(true);
-        audioRef.current.src = albums[currentIndex].audio;
-        try {
-          await audioRef.current.play();
-        } catch (error) {
-          console.error('Error playing audio:', error);
-        }
-        setIsLoading(false);
-      }
-    };
+    const audio = audioRef.current;
 
-    playAudio();
+    if (audio) {
+      setIsLoading(true);
+      audio.pause();
+      audio.src = albums[currentIndex].audio;
+      audio.load();
+
+      const handleCanPlayThrough = () => {
+        audio
+          .play()
+          .then(() => {
+            setIsLoading(false);
+          })
+          .catch((error) => {
+            if (error.name !== 'AbortError') {
+              console.error('Error playing audio:', error);
+            }
+            setIsLoading(false);
+          });
+      };
+
+      audio.addEventListener('canplaythrough', handleCanPlayThrough);
+
+      return () => {
+        audio.removeEventListener('canplaythrough', handleCanPlayThrough);
+      };
+    }
   }, [currentIndex]);
 
   // Add an event listener for the 'ended' event to auto-play next track
@@ -142,7 +155,6 @@ const Album = ({ handleClose }: { handleClose: () => void }) => {
                 alt="Album image"
                 layout="fill"
                 objectFit="contain"
-                className="rounded-md"
               />
               {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
