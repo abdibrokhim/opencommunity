@@ -16,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowOverlay(true);
+      // setShowOverlay(true);
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -41,12 +41,6 @@ export default function Header() {
     setSidebarOpen(!isSidebarOpen);
   };
 
-  const handleGiveawayClick = () => {
-    // Logic to call the OverlayCard component
-    console.log("OverlayCard called!");
-    setShowOverlay(true);
-  };
-
     const handleWatchTrailer = () => {
         // Logic to call the Trailer component
         console.log("Trailer called!");
@@ -63,20 +57,6 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full flex flex-col justify-between items-center bg-[#111216] border-b-[0.1px] border-[#A1A2A5] sticky top-0 border-opacity-30 z-30">
-        
-        {/* Giveaway Section */}
-        <div className="w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-2 z-30 overflow-hidden">
-          <div
-            className="flex whitespace-nowrap items-center animate-marquee cursor-pointer"
-            onClick={handleGiveawayClick}
-          >
-            <p className="text-lg md:text-xl font-bold hover:underline px-4">
-                🎁 Join our Giveaway 🎁
-            </p>
-          </div>
-        </div>
-
         {showOverlay && <OverlayCard handleClose={handleClose} />}
         {showTrailer && <Trailer handleClose={handleTrailerClose} />}
         {showAlbum && <Album handleClose={handleCloseAlbum} />}
@@ -85,6 +65,7 @@ export default function Header() {
         <div className="w-full flex justify-between items-center py-2 px-4 md:px-8">
           <div className="">
             <a
+              aria-label="Open Community"
               className="flex justify-center items-center gap-2"
               href="/"
               rel="noopener noreferrer"
@@ -116,6 +97,7 @@ export default function Header() {
               Watch Trailer 🔥
             </button>
             <a
+              aria-label="Most Popular"
               className="hover:text-[#A1A2A5] transition"
               href="#toppicks"
               rel="noopener noreferrer"
@@ -123,6 +105,7 @@ export default function Header() {
               Most Popular
             </a>
             <a
+              aria-label="Solution"
               className="hover:text-[#A1A2A5] transition"
               href="#portfolio"
               rel="noopener noreferrer"
@@ -130,6 +113,7 @@ export default function Header() {
               Solution
             </a>
             <a
+              aria-label="Partners"
               className="hover:text-[#A1A2A5] transition"
               href="#partners"
               rel="noopener noreferrer"
@@ -137,6 +121,7 @@ export default function Header() {
                 Partners
             </a>
             <a
+              aria-label="Contact Us"
               className="hover:text-[#A1A2A5] transition"
               href="#contact"
               rel="noopener noreferrer"
@@ -163,7 +148,7 @@ export default function Header() {
 
         {/* Sidebar */}
         <div
-          className={`fixed top-0 right-0 h-full sm:w-[50%] w-full bg-[#1f2024] shadow-lg z-50 transform sm:border-l-[0.1px] sm:border-[#A1A2A5] sm:border-opacity-30 ${
+          className={`fixed top-0 right-0 h-full sm:w-[50%] w-full bg-[#1f2024] shadow-lg z-50 overflow-auto transform sm:border-l-[0.1px] sm:border-[#A1A2A5] sm:border-opacity-30 ${
             isSidebarOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300`}
         >
@@ -171,6 +156,7 @@ export default function Header() {
           <div className="w-full bg-[#111216] px-4 py-2 flex justify-between items-center">
             <div>
               <a
+              aria-label="Open Community"
               className="flex justify-center items-center gap-2"
               href="/"
               rel="noopener noreferrer"
@@ -218,6 +204,7 @@ export default function Header() {
             {/* add devider below */}
             <hr className="border-t-[0.1px] border-[#A1A2A5] border-opacity-30 mt-4" />
             <a
+              aria-label="Most Popular"
               className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
               href="#toppicks"
               rel="noopener noreferrer"
@@ -226,6 +213,7 @@ export default function Header() {
               Most Popular
             </a>
             <a
+              aria-label="Solution"
               className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
               href="#portfolio"
               rel="noopener noreferrer"
@@ -234,6 +222,7 @@ export default function Header() {
               Solution
             </a>
             <a
+              aria-label="Partners"
               className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
               href="#partners"
               rel="noopener noreferrer"
@@ -242,6 +231,7 @@ export default function Header() {
                 Partners
             </a>
             <a
+              aria-label="Contact Us"
               className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
               href="#contact"
               rel="noopener noreferrer"
@@ -262,7 +252,6 @@ export default function Header() {
             onClick={toggleSidebar}
           ></div>
         )}
-      </header>
     </>
   );
 }

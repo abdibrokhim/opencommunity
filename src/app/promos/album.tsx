@@ -46,7 +46,7 @@ const Album = ({ handleClose }: { handleClose: () => void }) => {
 
     if (audio) {
       setIsLoading(true);
-      audio.pause();
+      // audio.pause();
       audio.src = albums[currentIndex].audio;
       audio.load();
 
@@ -125,6 +125,7 @@ const Album = ({ handleClose }: { handleClose: () => void }) => {
           <h6 className="text-sm sm:text-md font-bold text-center text-[var(--text)]">
             follow us{' '}
             <a
+              aria-label='Open Community'
               href="https://x.com/xopencommunity"
               target="_blank"
               className="text-[var(--button)] hover:text-[var(--primary)] hover:underline"
@@ -181,6 +182,7 @@ const Album = ({ handleClose }: { handleClose: () => void }) => {
           <h6 className="text-sm sm:text-md font-bold text-center text-[var(--text)]">
             All available now:{' '}
             <a
+              aria-label='Get full access'
               href="https://www.patreon.com/collection/897243"
               target="_blank"
               className="text-[var(--orange)] hover:text-[var(--hover-orange)] hover:underline"

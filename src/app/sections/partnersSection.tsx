@@ -15,6 +15,7 @@ export default function Partners() {
       <div className="flex flex-wrap justify-center gap-8">
         {/* Partner 1 */}
         <a
+          aria-label="AI/ML API"
           href="https://aimlapi.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,6 +32,7 @@ export default function Partners() {
 
         {/* Partner 1 */}
         <a
+          aria-label="Taipy"
           href="https://taipy.io/"
           target="_blank"
           rel="noopener noreferrer"
@@ -47,6 +49,7 @@ export default function Partners() {
 
         {/* Partner 2 */}
         <a
+          aria-label="I AM STARTUP"
           href="https://imcook.in"
           target="_blank"
           rel="noopener noreferrer"
@@ -63,6 +66,7 @@ export default function Partners() {
 
         {/* Partner 3 */}
         <a
+          aria-label="Paper AI"
           href="https://paperai.pro"
           target="_blank"
           rel="noopener noreferrer"
@@ -78,6 +82,7 @@ export default function Partners() {
         </a>
         {/* Partner 4 */}
         <a
+          aria-label="CoMed"
           href="https://comedai.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"

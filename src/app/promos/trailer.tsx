@@ -29,6 +29,7 @@ const Trailer = ({ handleClose }: { handleClose: () => void }) => {
           <h6 className="text-sm sm:text-md font-bold text-center text-[var(--text)]">
             follow us{" "}
             <a
+              aria-label="Open Community"
               href="https://x.com/xopencommunity"
               target="_blank"
               className="text-[var(--button)] hover:text-[var(--primary)] hover:underline"

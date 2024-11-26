@@ -38,6 +38,7 @@ export default function Portfolio() {
                 <div className="flex flex-wrap gap-4">
                   {project.youtube && (
                     <a
+                      aria-label="Watch on YouTube"
                       className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
                       href={project.youtube}
                       target="_blank"
@@ -57,6 +58,7 @@ export default function Portfolio() {
                   )}
                   {project.tutorial && (
                     <a
+                      aria-label="Build from Scratch"
                       className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
                       href={project.tutorial}
                       target="_blank"
@@ -76,6 +78,7 @@ export default function Portfolio() {
                   )}
                   {project.github && (
                     <a
+                      aria-label="View on GitHub"
                       className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
                       href={project.github}
                       target="_blank"
@@ -95,6 +98,7 @@ export default function Portfolio() {
                   )}
                   {project.demo && (
                     <a
+                      aria-label="Live Demo"
                       className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3 group"
                       href={project.demo}
                       target="_blank"

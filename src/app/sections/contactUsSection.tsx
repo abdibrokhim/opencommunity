@@ -17,7 +17,9 @@ return (
               </p>
               <div
                 className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
-                <a href="https://x.com/xopencommunity" 
+                <a 
+                aria-label="Open Community on X"
+                href="https://x.com/xopencommunity" 
                   className="text-[#ffffff] hover:underline"
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -41,7 +43,9 @@ return (
               </p>
               <div
                 className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
-                <a href="https://www.linkedin.com/company/opencommunity/" 
+                <a 
+                aria-label="Open Community on LinkedIn"
+                href="https://www.linkedin.com/company/opencommunity/" 
                   className="text-[#ffffff] hover:underline"
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -65,7 +69,9 @@ return (
               </p>
               <div
                 className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
-                <a href="https://topmate.io/abdibrokhim/1291447" 
+                <a 
+                aria-label="Book a Call"
+                href="https://topmate.io/abdibrokhim/1291447" 
                   className="text-[#ffffff] hover:underline"
                   target="_blank" 
                   rel="noopener noreferrer"
