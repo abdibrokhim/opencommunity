@@ -60,21 +60,7 @@ export default function Home() {
         />
       </button>
       {/* Header Section */}
-      <header className="w-full flex flex-col justify-between items-center bg-[#111216] border-b-[0.1px] border-[#A1A2A5] sticky top-0 border-opacity-30 z-30">
-        
-        {/* Giveaway Section */}
-        <div className="w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-2 z-30 overflow-hidden">
-          <a
-           aria-label="Giveaway"
-            href="#giveawayy"
-            rel="noopener noreferrer"
-            className="flex whitespace-nowrap items-center animate-marquee cursor-pointer"
-          >
-            🎁 Join our Giveaway 🎁
-          </a>
-        </div>
       <Header />
-      </header>
       {/* Main Section */}
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         {/* Hero Section */}
