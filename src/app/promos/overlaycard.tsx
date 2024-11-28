@@ -21,14 +21,14 @@ const OverlayCard = ({ handleClose }: { handleClose: () => void }) => {
           />
         </button>
         <div className="p-4">
-    <h2 className="text-3xl font-bold text-center mb-8">
+    <h2 className="text-3xl font-bold text-center mb-8 line-through">
       🎉 Join our Giveaway 🎉
     </h2>
     <h6 className="text-md font-bold text-center mb-8 text-[var(--text)]">
-            just follow us <a href="https://x.com/xopencommunity" target="_blank" className="text-[var(--button)] hover:text-[var(--primary)] hover:underline">Open Community</a>
+            but you may still follow us <a href="https://x.com/xopencommunity" target="_blank" className="text-[var(--button)] hover:text-[var(--primary)] hover:underline">Open Community</a>
           </h6>
     <Image
-    src="/assets/giveaway-banner.png"
+    src="/assets/no-giveaway.png"
     alt="Giveaway Banner"
     width={500}
     height={300}

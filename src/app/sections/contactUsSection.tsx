@@ -11,12 +11,12 @@ return (
           </h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1">
-              <h3 className="text-xl font-bold mb-4">X (Twitter)</h3>
+              <h3 className="text-xl font-bold mb-4">X</h3>
               <p className="text-lg mb-4 text-[var(--text)]">
                 Follow us on X for updates, insights, and more.
               </p>
               <div
-                className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
+                className="flex flex-row gap-2 bg-[var(--x)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--x)] hover:opacity-80 transition cursor-pointer">
                 <a 
                 aria-label="Open Community on X"
                 href="https://x.com/xopencommunity" 
@@ -42,7 +42,7 @@ return (
                 Follow us on LinkedIn for updates, insights, and more. Let&apos;s connect!
               </p>
               <div
-                className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
+                className="flex flex-row gap-2 bg-[var(--linkedin)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--linkedin)] hover:opacity-80 transition cursor-pointer">
                 <a 
                 aria-label="Open Community on LinkedIn"
                 href="https://www.linkedin.com/company/opencommunity/" 
@@ -68,7 +68,7 @@ return (
                 Book a call with us to discuss your project, partnership, or any other inquiries.
               </p>
               <div
-                className="flex flex-row gap-2 bg-[var(--button)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition cursor-pointer">
+                className="flex flex-row gap-2 bg-[var(--topmate-io)] text-white w-full items-center justify-center py-2 rounded-lg text-md font-bold hover:bg-[var(--topmate-io)] hover:opacity-80 transition cursor-pointer">
                 <a 
                 aria-label="Book a Call"
                 href="https://topmate.io/abdibrokhim/1291447" 

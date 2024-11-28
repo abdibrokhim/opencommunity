@@ -20,16 +20,30 @@ export default function Portfolio() {
                 key={index}
                 className="bg-[var(--tertiary)] p-6 rounded-lg shadow-lg flex-1"
               >
-                {/* Display cover image if available */}
-                {project.cover && (
+                {project.youtube ? (
+                <div className="relative w-full md:h-[540px] h-[360px]">
+            <iframe
+            width="100%" height="100%" 
+              className="rounded-md"
+              src={project.youtubeEmbed}
+              title={project.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+                ) :
+                                project.cover && (
                   <Image
-                    src="/assets/intro.png"
+                    src="/assets/ads.png"
                     alt={project.title}
                     width={500}
                     height={300}
                     className="mb-4 rounded w-full"
                   />
-                )}
+                )
+              }
                 <h3 className="text-xl font-bold mb-4">{project.title}</h3>
                 <p className="text-md md:text-lg mb-4 text-[var(--text)]">
                   {project.description}

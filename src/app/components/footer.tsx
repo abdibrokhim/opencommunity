@@ -24,7 +24,7 @@ export default function Footer() {
               />
           </a>
           <a
-              aria-label="Open Community on Twitter"
+              aria-label="Open Community on Discord"
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
               href="https://discord.gg/nVtmDUN2sR"
               target="_blank"

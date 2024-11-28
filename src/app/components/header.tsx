@@ -7,6 +7,8 @@ import GiveawayBanner from "../promos/banner";
 import OverlayCard from "../promos/overlaycard";
 import Trailer from "../promos/trailer";
 import Album from "../promos/album";
+import Meme from "../sections/memeSection";
+import AdsBanner from "../ads/banner";
 
 export default function Header() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -65,7 +67,7 @@ export default function Header() {
            aria-label="Giveaway"
            onClick={()=>setShowOverlay(true)}
             rel="noopener noreferrer"
-            className="flex whitespace-nowrap items-center animate-marquee cursor-pointer"
+            className="flex whitespace-nowrap items-center animate-marquee cursor-pointer line-through"
           >
             🎁 Join our Giveaway 🎁
           </a>
@@ -98,24 +100,32 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-row gap-6 justify-between items-center text-[#BBBCBE]">
              <button
-              className="bg-[var(--button)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition"
+              className="bg-[var(--tertiary)] text-white hover:text-black md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--tint)] transition"
               onClick={() => setShowAlbum(true)}
             >
               AI Album - I AM STARTUP 🎵
             </button>
             <button
-              className="bg-[var(--orange)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[#ff6600] transition"
+              className="bg-[var(--tertiary)] text-white hover:text-black md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--tint)] transition"
               onClick={handleWatchTrailer}
             >
               Watch Trailer 🔥
             </button>
-            <a
+            {/* <a
               aria-label="Most Popular"
               className="hover:text-[#A1A2A5] transition"
               href="#toppicks"
               rel="noopener noreferrer"
             >
               Most Popular
+            </a> */}
+            <a
+              aria-label="Meme"
+              className="hover:text-[#A1A2A5] transition"
+              href="#meme"
+              rel="noopener noreferrer"
+            >
+              Meme
             </a>
             <a
               aria-label="Solution"
@@ -139,7 +149,7 @@ export default function Header() {
               href="#contact"
               rel="noopener noreferrer"
             >
-              Contact Us
+              Contact
             </a>
           </div>
 
@@ -203,20 +213,20 @@ export default function Header() {
           {/* Sidebar Content */}
           <div className="p-4 flex flex-col gap-1">
             <button
-              className="bg-[var(--button)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--primary)] transition"
+              className="bg-[var(--background)] text-white hover:text-black md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--tint)] transition"
               onClick={handleAlbumClick}
             >
               AI Album - I AM STARTUP 🎵
             </button>
             <button
-              className="mt-2 bg-[var(--orange)] text-white md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[#ff6600] transition"
+              className="mt-2 bg-[var(--background)] text-white hover:text-black md:px-8 px-8 py-2 rounded-lg text-md font-bold hover:bg-[var(--tint)] transition"
               onClick={handleWatchTrailer}
             >
               Watch Trailer 🔥
             </button>
             {/* add devider below */}
             <hr className="border-t-[0.1px] border-[#A1A2A5] border-opacity-30 mt-4" />
-            <a
+            {/* <a
               aria-label="Most Popular"
               className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
               href="#toppicks"
@@ -224,6 +234,15 @@ export default function Header() {
               onClick={toggleSidebar}
             >
               Most Popular
+            </a> */}
+            <a
+              aria-label="Meme"
+              className="text-[#e5e5e6] hover:text-[#ffffff] transition hover:bg-[#BBBCBE] hover:bg-opacity-10 rounded-md p-3"
+              href="#meme"
+              rel="noopener noreferrer"
+              onClick={toggleSidebar}
+            >
+              Meme
             </a>
             <a
               aria-label="Solution"
@@ -250,11 +269,12 @@ export default function Header() {
               rel="noopener noreferrer"
               onClick={toggleSidebar}
             >
-              Contact Us
+              Contact
             </a>
             {/* add devider below */}
             <hr className="border-t-[0.1px] border-[#A1A2A5] border-opacity-30 mt-4" />
-            <GiveawayBanner />
+            <AdsBanner />
+            {/* <Meme /> */}
           </div>
         </div>
 

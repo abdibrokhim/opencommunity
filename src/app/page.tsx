@@ -12,6 +12,8 @@ import ContactUs from "./sections/contactUsSection";
 import GiveawayBanner from "./promos/banner";
 import Partners from "./sections/partnersSection";
 import Notification from './components/notify';
+import Meme from "./sections/memeSection";
+
 import './components/styles.css';
 
 export default function Home() {
@@ -80,31 +82,50 @@ export default function Home() {
             <p className="text-lg md:text-xl text-[var(--text)] mb-8 px-0 lg:px-48">
               An open-source and AI-powered community that empowers developers, researchers, and creators to build the future together.
             </p>
-            <button
-              className="bg-[var(--button)] text-white md:px-24 px-12 py-3 rounded-lg text-lg font-bold hover:bg-[var(--primary)] transition"
-              onClick={() =>
-                document
-                  .getElementById("toppicks")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Explore Here <Image
-                aria-hidden
-                src="/essentials/arrow-left.svg"
-                alt="Arrow left icon"
-                width={18}
-                height={18}
-                className="inline w-[14px] h-[14px] ml-2"
-              />
-            </button>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+              <button
+                className="bg-[var(--button)] text-white md:px-24 px-12 py-3 rounded-lg text-lg font-bold hover:bg-[var(--primary)] transition"
+                onClick={() =>
+                  document
+                    .getElementById("portfolio")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Explore Here <Image
+                  aria-hidden
+                  src="/essentials/arrow-left.svg"
+                  alt="Arrow left icon"
+                  width={18}
+                  height={18}
+                  className="inline w-[14px] h-[14px] ml-2 rotate-90"
+                />
+              </button>
+              <button
+                className="bg-[var(--orange)] text-white md:px-24 px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#ff6600] transition"
+                onClick={() =>
+                  window.open("https://x.com/xopencommunity", "_blank")
+                }
+              >
+                Join Community <Image
+                  aria-hidden
+                  src="/essentials/arrow-left.svg"
+                  alt="Arrow left icon"
+                  width={18}
+                  height={18}
+                  className="inline w-[14px] h-[14px] ml-2"
+                />
+              </button>
+            </div>
           </div>
         </div>
         {/* Top Picks Section */}
-        <TopPicks />
+        {/* <TopPicks /> */}
         {/* Portfolio Section */}
         <Portfolio />
         {/* Giveaway Section */}
-        <GiveawayBanner />
+        {/* <GiveawayBanner /> */}
+        {/* Meem Section */}
+        <Meme />
         {/* Partners Section */}
         <Partners />
         {/* Community Section */}

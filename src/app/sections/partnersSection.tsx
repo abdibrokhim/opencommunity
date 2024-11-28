@@ -47,6 +47,22 @@ export default function Partners() {
           />
         </a>
 
+        <a
+          aria-label="LLMware"
+          href="https://llmware-ai.github.io/llmware/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-transform transform hover:scale-105 flex flex-col items-center justify-center"
+        >
+          <Image
+            src="/partners/llmware_logo_color.png"
+            alt="LLMware"
+            width={200}
+            height={100}
+            className="object-contain"
+          />
+        </a>
+
         {/* Partner 2 */}
         <a
           aria-label="I AM STARTUP"
