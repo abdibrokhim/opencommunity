@@ -61,7 +61,7 @@ export const portfolio = [
       ps: "",
       youtube: "https://youtu.be/_wTaMLL4by0",
       youtubeEmbed: "https://www.youtube.com/embed/_wTaMLL4by0",
-      tutorial: "",
+      tutorial: "https://github.com/abdibrokhim/nextgen-o1/blob/main/TUTORIAL.md",
       github: "https://github.com/abdibrokhim/nextgen-o1",
       demo: ""
     },
