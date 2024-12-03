@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   const humanaizeAiText = async (aiText: string) => {
-    console.log('Sending POST request /api/humanaize');
+    console.log('Sending POST request /api/default');
     try {
       const response = await fetch('/api/default', {
         method: 'POST',
@@ -50,7 +50,7 @@ export default function Home() {
       console.log('Trying GPT...');
       return tryGpt(aiText);
     } finally {
-      console.log('POST request /api/humanaize completed');
+      console.log('POST request /api/default completed');
     }
   };
   
