@@ -26,7 +26,7 @@ export default function Home() {
   const humanaizeAiText = async (aiText: string) => {
     console.log('Sending POST request /api/default');
     try {
-      const response = await fetch('/api/default', {
+      const response = await fetch('https://www.theopencommunity.co/api/default', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ export default function Home() {
   const tryGpt = async (aiText: string) => {
     console.log('Sending POST request /api/gpt');
     try {
-      const response = await fetch('/api/gpt', {
+      const response = await fetch('https://www.theopencommunity.co/api/gpt', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
