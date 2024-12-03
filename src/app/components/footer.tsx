@@ -9,6 +9,21 @@ export default function Footer() {
       <footer className="row-start-3 w-full flex flex-col md:flex-row-reverse gap-8 mt-16 md:mt-0 justify-between items-center sm:p-20 p-8">
         <div className="flex gap-2 flex-wrap items-center justify-center">
           <a
+              aria-label="Open Community Email"
+              className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
+              href="mailto:contact@theopencommunity.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                src="/socials/mail.svg"
+                alt="mail icon"
+                width={22}
+                height={22}
+              />
+          </a>
+          <a
               aria-label="Open Community on GitHub"
               className="flex items-center hover:underline hover:underline-offset-4 hover:bg-[#335fff] hover:bg-opacity-30 rounded-full p-3"
               href="https://github.com/abdibrokhim?tab=repositories"
