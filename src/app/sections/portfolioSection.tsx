@@ -40,7 +40,7 @@ export default function Portfolio() {
                     alt={project.title}
                     width={500}
                     height={300}
-                    className="mb-4 rounded w-full"
+                    className="my-4 rounded w-full"
                   />
                 )
               }

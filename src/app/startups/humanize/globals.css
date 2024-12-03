@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-a: #0B0E11;
+  --text-a: #FFFFFF;
+  --text-b: #C3C4C7;
+  --text-c: #787B89;
+  --orange: #ee5d19;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-a: #0B0E11;
+    --text-a: #FFFFFF;
+    --text-b: #C3C4C7;
+    --text-c: #787B89;
+  }
+}
+
+::selection {
+  background-color: var(--orange);
+  color: var(--text-a);
+}

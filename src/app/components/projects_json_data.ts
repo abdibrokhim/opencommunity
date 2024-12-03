@@ -41,7 +41,7 @@ export const portfolio = [
       youtubeEmbed: "https://www.youtube.com/embed/CLrENdjIe58",
       tutorial: "https://dev.to/abdibrokhim/step-by-step-tutorial-on-building-an-ai-text-humanizer-with-aiml-api-and-integration-with-clerk-auth-and-deploying-to-vercel-moj",
       github: "https://github.com/abdibrokhim/humanaize",
-      demo: "https://humanaize.vercel.app/"
+      demo: "https://www.theopencommunity.co/startups/humanize"
     },
     {
       cover: "/portfolio/aistickermaker.png",

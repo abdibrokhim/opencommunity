@@ -1,0 +1,28 @@
+.Editor_title3__hWeAn {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Editor_title3__hWeAn .Editor_editor__header__GIEq6 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.Editor_title3__hWeAn .Editor_editor__subheader__uH98a {
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.Editor_title3__hWeAn .Editor_editor__description__sjr_h {
+    text-align: center;
+    padding: 20px 10px;
+    width: 80%;
+    line-height: 28px;
+    font-size: 16px;
+}
