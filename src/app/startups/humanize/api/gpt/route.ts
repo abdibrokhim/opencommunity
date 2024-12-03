@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import { systemPrompt } from '../humanaize/utils/instr';
-import { writingSamples } from '../humanaize/utils/samples';
+import { systemPrompt } from '../default/utils/instr';
+import { writingSamples } from '../default/utils/samples';
 
 const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 

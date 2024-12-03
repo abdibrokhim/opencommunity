@@ -26,7 +26,7 @@ export default function Home() {
   const humanaizeAiText = async (aiText: string) => {
     console.log('Sending POST request /api/humanaize');
     try {
-      const response = await fetch('/api/humanaize', {
+      const response = await fetch('/api/default', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
