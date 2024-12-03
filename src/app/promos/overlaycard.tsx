@@ -5,7 +5,7 @@ const OverlayCard = ({ handleClose }: { handleClose: () => void }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40 p-8">
-      <div className="relative bg-[#1f2024] rounded-md p-4">
+      <div className="relative bg-[#1f2024] rounded-md p-4 max-w-md w-full">
         {/* Close Button */}
         <button
           onClick={handleClose}
@@ -32,7 +32,7 @@ const OverlayCard = ({ handleClose }: { handleClose: () => void }) => {
     alt="Giveaway Banner"
     width={500}
     height={300}
-    className="mb-4 rounded w-full"
+    className="rounded w-full"
   />
     </div>
       </div>
